@@ -104,7 +104,133 @@
         <img src = "images/lent.png" style="width:80%; text-align:center !important; margin-top: -5%; margin-bottom:5%;">
 </div>
       </div>
+      <script>
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            if ($('#upbutton').is(':hidden')) {
+                $('#upbutton').css({opacity : 1}).fadeIn('slow');
+            }
+        } else { $('#upbutton').stop(true, false).fadeOut('fast'); }
+    });
+    $('#upbutton').click(function() {
+        $('html, body').stop().animate({scrollTop : 0}, 300);
+    });
+</script>
+      <style>
+        .knopka{
+            position: fixed; /* Фиксированное положение */
+            left: -3px; /* Расстояние от правого края окна браузера */
+            top: 20%; /* Расстояние сверху */
+            padding: 10px; /* Поля вокруг текста */ 
+            background: #ffe; /* Цвет фона */ 
+            border: 1px solid #333;
+            border-radius:7px;
+            background: orange;
+            color: white;
+            width:10%;
+            box-shadow: 0 0 20px 20px red;
+        }
+        .knopka1{
+            position: fixed; /* Фиксированное положение */
+            left: -3px; /* Расстояние от правого края окна браузера */
+            top: 30%; /* Расстояние сверху */
+            padding: 10px; /* Поля вокруг текста */ 
+            background: #ffe; /* Цвет фона */ 
+            border: 1px solid #333;
+            border-radius:7px;
+            background: orange;
+            color: white;
+            width:10%;
+            box-shadow: 0 0 20px 20px red;
+        }
+        .knopka2{
+            position: fixed; /* Фиксированное положение */
+            left: -3px; /* Расстояние от правого края окна браузера */
+            top: 40%; /* Расстояние сверху */
+            padding: 10px; /* Поля вокруг текста */ 
+            background: #ffe; /* Цвет фона */ 
+            border: 1px solid #333;
+            border-radius:7px;
+            background: orange;
+            color: white;
+            width:10%;
+            box-shadow: 0 0 20px 20px red;
+        }
+        .knopka3{
+            position: fixed; /* Фиксированное положение */
+            left: -3px; /* Расстояние от правого края окна браузера */
+            top: 50%; /* Расстояние сверху */
+            padding: 10px; /* Поля вокруг текста */ 
+            background: #ffe; /* Цвет фона */ 
+            border: 1px solid #333;
+            border-radius:7px;
+            background: orange;
+            color: white;
+            width:10%;
+            box-shadow: 0 0 20px 20px red;
+        }
+        .knopka:hover{
+            position: fixed; /* Фиксированное положение */
+            left: -3px; /* Расстояние от правого края окна браузера */
+            top: 20%; /* Расстояние сверху */
+            padding: 10px; /* Поля вокруг текста */ 
+            background: #ffe; /* Цвет фона */ 
+            border: 1px solid #333;
+            border-radius:7px;
+            background: lightgray;
+            color: red;
+            width:10%;
+            box-shadow: 0 0 20px 20px red;
+        }
+        .knopka1:hover{
+            position: fixed; /* Фиксированное положение */
+            left: -3px; /* Расстояние от правого края окна браузера */
+            top: 30%; /* Расстояние сверху */
+            padding: 10px; /* Поля вокруг текста */ 
+            background: #ffe; /* Цвет фона */ 
+            border: 1px solid #333;
+            border-radius:7px;
+            background: lightgray;
+            color: red;
+            width:10%;
+            box-shadow: 0 0 20px 20px red;
+        }
+        .knopka2:hover{
+            position: fixed; /* Фиксированное положение */
+            left: -3px; /* Расстояние от правого края окна браузера */
+            top: 40%; /* Расстояние сверху */
+            padding: 10px; /* Поля вокруг текста */ 
+            background: #ffe; /* Цвет фона */ 
+            border: 1px solid #333;
+            border-radius:7px;
+            background: lightgray;
+            color: red;
+            width:10%;
+            box-shadow: 0 0 20px 20px red;
+        }
+        .knopka3:hover{
+            position: fixed; /* Фиксированное положение */
+            left: -3px; /* Расстояние от правого края окна браузера */
+            top: 50%; /* Расстояние сверху */
+            padding: 10px; /* Поля вокруг текста */ 
+            background: #ffe; /* Цвет фона */ 
+            border: 1px solid #333;
+            border-radius:7px;
+            background: lightgray;
+            color: red;
+            width:10%;
+            box-shadow: 0 0 20px 20px red;
+        }
+        
+      </style>
+      <div style="background-color: black !important">
+      <a href="index.html" id="upbutton"><span class="knopka" >На главную</span></a>
+      <a href="asdf.html" id="upbutton"><span class="knopka1" >Участники войны</span></a>
+      <a href="trud.html" id="upbutton"><span class="knopka2" >Труженики тыла</span></a>
+      <a href="child.html" id="upbutton"><span class="knopka3" >Дети войны</span></a>
+      </div>
     <div class="juster">
+    
       <h2>Участники войны</h2>
       <div>Тут будет представлен алфавитный список участников войны по типу:</div>
       <div style="font-size:50px"><b>А</b></div>
